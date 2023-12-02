@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="015884c7d03544179f1657d54ec4c4a3" Name="Diagram1">
+        <EntityTypeShape EntityType="e_commeranceModel.cart_" Width="1.5" PointX="3" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="e_commeranceModel.cartitem" Width="1.5" PointX="5.25" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="e_commeranceModel.Category" Width="1.5" PointX="0.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="e_commeranceModel.order_details" Width="1.5" PointX="5.25" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="e_commeranceModel.Order" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="e_commeranceModel.product" Width="1.5" PointX="3" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="e_commeranceModel.Review" Width="1.5" PointX="8.25" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="e_commeranceModel.sysdiagram" Width="1.5" PointX="7.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="e_commeranceModel.User_" Width="1.5" PointX="0.75" PointY="8.375" IsExpanded="true" />
+        <AssociationConnector Association="e_commeranceModel.FK__cart___UserID__44FF419A" ManuallyRouted="false" />
+        <AssociationConnector Association="e_commeranceModel.FK__cartitem__CartID__47DBAE45" ManuallyRouted="false" />
+        <AssociationConnector Association="e_commeranceModel.FK__cartitem__Produc__48CFD27E" ManuallyRouted="false" />
+        <AssociationConnector Association="e_commeranceModel.FK__product__Categor__3B75D760" ManuallyRouted="false" />
+        <AssociationConnector Association="e_commeranceModel.FK__order_det__Order__412EB0B6" ManuallyRouted="false" />
+        <AssociationConnector Association="e_commeranceModel.FK__order_det__Produ__4222D4EF" ManuallyRouted="false" />
+        <AssociationConnector Association="e_commeranceModel.FK__Orders__UserID__3E52440B" ManuallyRouted="false" />
+        <AssociationConnector Association="e_commeranceModel.FK__Review__ProductI__4CA06362" ManuallyRouted="false" />
+        <AssociationConnector Association="e_commeranceModel.FK__Review__UserID__4BAC3F29" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
