@@ -43,7 +43,7 @@
             </Button.Resources>
         </Button>
         <Label Content="Sign in" HorizontalAlignment="Left" Margin="39,31,0,0" VerticalAlignment="Top" FontSize="48" Foreground="#FF0E0E0E" FontFamily="Bahnschrift SemiBold Condensed" FontWeight="Bold" Grid.Column="1"/>
-        <Button Content="create account" Margin="68,192,68,0" Click="Button_Click" FontWeight="Bold" FontSize="18" BorderBrush="#FF9C8BC5" Background="#FF508BDC" Height="47" VerticalAlignment="Top" Grid.Row="1" Grid.Column="1">
+        <Button Content="create account" Margin="68,192,68,0"  FontWeight="Bold" FontSize="18" BorderBrush="#FF9C8BC5" Background="#FF508BDC" Height="47" VerticalAlignment="Top" Grid.Row="1" Grid.Column="1" Click="Button_Click_1">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="25"/>

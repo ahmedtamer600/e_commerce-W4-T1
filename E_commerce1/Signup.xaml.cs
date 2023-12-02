@@ -20,7 +20,7 @@ namespace E_commerce1
     /// </summary>
     public partial class Signup : Page
     {
-      
+        e_commeranceEntities db = new e_commeranceEntities();
         public Signup()
         {
             InitializeComponent();
@@ -28,9 +28,19 @@ namespace E_commerce1
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-           
+            User_ user = new User_();
+
+            user.Username = name.Text;
+            user.Address = address.Text;
+            user.Email = email.Text;
+            user.Phone = phone.Text;
+            user.Password_ = pass.Text;
+            db.User_.Add(user);
+            db.SaveChanges();
+            Homepage homepage = new Homepage();
+            this.NavigationService.Navigate(homepage);
         }
 
-     
+
     }
 }

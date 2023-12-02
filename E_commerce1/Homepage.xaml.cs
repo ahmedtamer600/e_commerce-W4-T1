@@ -25,31 +25,36 @@ namespace E_commerce1
             InitializeComponent();
         }
 
-    
+
 
         private void Button_Click3(object sender, RoutedEventArgs e)
         {
-              
+            Signup signup = new Signup();
+            this.NavigationService.Navigate(signup);
         }
 
         private void Button_Click1(object sender, RoutedEventArgs e)
         {
-         
+            Reveiws signup = new Reveiws();
+            this.NavigationService.Navigate(signup);
         }
 
         private void Button_Click4(object sender, RoutedEventArgs e)
         {
-           
+            Orderdetials orderdetials = new Orderdetials();
+            this.NavigationService.Navigate(orderdetials);
         }
 
         private void Button_Click2(object sender, RoutedEventArgs e)
         {
-        
+            Cart cart = new Cart();
+            this.NavigationService.Navigate(cart);
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-           
+            userinfo userinfo = new userinfo();
+            this.NavigationService.Navigate(userinfo);
         }
     }
 }

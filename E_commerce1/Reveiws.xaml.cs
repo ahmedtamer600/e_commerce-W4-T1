@@ -20,7 +20,7 @@ namespace E_commerce1
     /// </summary>
     public partial class Reveiws : Page
     {
-       
+        e_commeranceEntities db = new e_commeranceEntities();
         public Reveiws()
         {
             InitializeComponent();
@@ -28,9 +28,10 @@ namespace E_commerce1
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-          
+            var u = int.Parse(ID.Text);
+            datagrid.ItemsSource = db.Reviews.Where(x => x.UserID == u).ToList();
         }
 
-      
+
     }
 }

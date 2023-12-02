@@ -20,7 +20,7 @@ namespace E_commerce1
     /// </summary>
     public partial class Cart : Page
     {
-       
+        e_commeranceEntities db = new e_commeranceEntities();
         public Cart()
         {
             InitializeComponent();
@@ -28,9 +28,11 @@ namespace E_commerce1
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-           
+            cart_ cart_ = new cart_();
+            var i = int.Parse(name.Text);
+            datagrid.ItemsSource = db.cart_.Where(x => x.UserID == i).ToList();
         }
 
-       
+
     }
 }

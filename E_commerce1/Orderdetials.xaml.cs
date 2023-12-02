@@ -20,8 +20,7 @@ namespace E_commerce1
     /// </summary>
     public partial class Orderdetials : Page
     {
-
-       
+        e_commeranceEntities db = new e_commeranceEntities();
         public Orderdetials()
         {
             InitializeComponent();
@@ -29,10 +28,11 @@ namespace E_commerce1
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-           
-         
+            var i = int.Parse(name.Text);
+            datagrid.ItemsSource = db.order_details.Where(x => x.ProductID == i).ToList();
+
         }
 
-      
+
     }
 }
