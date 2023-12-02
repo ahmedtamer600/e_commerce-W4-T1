@@ -4,6 +4,13 @@
              xmlns:local="clr-namespace:E_commerce1"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <Style TargetType="Button" x:Key="buttonstyle">
+            <Setter Property= "FontWeight" Value="Bold" > </Setter>
+            <Setter Property=  "FontSize" Value="18"  ></Setter>
+            <Setter Property="BorderBrush" Value="#FF9C8BC5"></Setter>
+            <Setter Property="Height" Value="46"></Setter>
+            <Setter Property="VerticalAlignment" Value=" Top"></Setter>
+            <Setter Property="Width" Value="NaN"></Setter> 
+        </Style>
     </Application.Resources>
 </Application>

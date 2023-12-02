@@ -19,7 +19,7 @@
                 </Style>
             </Button.Resources>
         </Button>
-        <Button Content="Sign in" Margin="75,288,567,0" Click="Button_Click" FontWeight="Bold" FontSize="18" BorderBrush="#FF9C8BC5" Background="#FFD6CFE0" Height="46" VerticalAlignment="Top" Width="NaN">
+        <Button Content="Sign in" Margin="75,288,567,0" Click="Button_Click" Style="{StaticResource buttonstyle}">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="25"/>

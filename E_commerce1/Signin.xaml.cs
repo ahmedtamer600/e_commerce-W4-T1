@@ -20,7 +20,7 @@ namespace E_commerce1
     /// </summary>
     public partial class Signin : Page
     {
-        e_commeranceEntities db = new e_commeranceEntities();
+        
         public Signin()
         {
             InitializeComponent();
@@ -33,17 +33,7 @@ namespace E_commerce1
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            User_ user = new User_();
-           try
-            {
-                 db.User_.First(x => x.Username == name.Text && x.Password_ == password.Text);
-                Homepage homepage = new Homepage();
-                this.NavigationService.Navigate(homepage);
-            }
-            catch  
-            {
-                MessageBox.Show("sike wrong DATA");
-            }
+            
         }
 
     }
